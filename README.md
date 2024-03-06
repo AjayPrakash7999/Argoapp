@@ -69,7 +69,7 @@
 4. Check the status of Kubernetes pods
   - kubectl get pods -n argocd
 
-# Forwarding Ports to Access Argo CD
+## Forwarding Ports to Access Argo CD
 5.1.Retrieve the admin password which was automatically generated during your installation and decode from base64 from online.
   - kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}"
 
@@ -81,19 +81,19 @@
     - user id : admin
     - password :base64 decoded password.
 
-# Deploying an Example Application from argocd using argocd cli
-7. Deploying an Application
+## Deploying an Example Application from argocd using argocd cli
+6. Deploying an Application
   - argocd login localhost:8080
     - user id : admin
     - password :base64 decoded password.
   - argocd app create helm-guestbook --repo https://github.com/AjayPrakash7999/Argoapp.git --path helm-guestbook --dest-server https://kubernetes.default.svc --dest-namespace default
  
-7.1 Check status inside argocd
+6.1 Check status inside argocd
   - argocd app get helm-guestbook
 
-7.2 Actually deploy the application
+6.2 Actually deploy the application
   - argocd app sync helm-guestbook
 
-7.3 Port foward from onther session check the application status
+6.3 Port foward from onther session check the application status
   - kubectl port-forward svc/helm-guestbook 9090:80
   - http://localhost:9090
