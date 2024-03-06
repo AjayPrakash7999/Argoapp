@@ -1,6 +1,6 @@
 # Task 1: Setup and Configuration
 
-GitHub Repository Setup:
+## GitHub Repository Setup:
 - Created a GitHub repository to host the source code.
 - Uploaded the web application code to the repository.
 
