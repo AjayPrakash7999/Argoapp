@@ -50,7 +50,7 @@
 - Utilized Argo Rollouts' debugging features, including analyzing logs and metrics, to identify and resolve issues in the rollout process.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-- Commands are Listed below & Screenshot Attached in Screenshot.md File in Git Repo
+- Commands are Listed below & Screenshot Attached in screenshot.pdf File in Git Repo
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 - First I'm Download Kubernetes and It's Pre-requisite.
