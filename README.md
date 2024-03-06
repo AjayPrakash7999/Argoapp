@@ -96,6 +96,11 @@ Commands are Listed below
 7.2 Actually deploy the application
   - argocd app sync helm-guestbook
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Screenshot Attached in Screenshot.md File in Git Repo
+
+
+
 7.3 Port foward from onther session check the application status
   - kubectl port-forward svc/helm-guestbook 9090:80
   - http://localhost:9090
